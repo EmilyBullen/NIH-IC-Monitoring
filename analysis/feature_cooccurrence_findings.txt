@@ -1,0 +1,46 @@
+Key Findings: Feature Co-occurrence Across NIH IC Data Ecosystem Platforms
+==========================================================================
+
+General
+-------
+- 29 platforms were analyzed across 21 informative TRUE/FALSE features.
+- 3 features (Public Uptime Checking, Posters/Conference Contributions,
+  Books/Collections) were excluded as zero-variance (absent from all platforms).
+- Co-occurrence values represent the percentage of platforms where both
+  features are simultaneously present.
+
+Core Feature Cluster
+--------------------
+- A cluster of features shows high co-occurrence (70-97%), suggesting a
+  common baseline adopted by most platforms: Metadata standardization,
+  Search, Metadata validation, Metadata augmentation, Publications, and Samples.
+- These features appear to form a core set of capabilities that platforms
+  tend to adopt together.
+
+Technical and Metadata Features
+---------------------------------
+- API and Search co-occur in 83% of platforms, indicating that platforms
+  with programmatic access almost always also support search functionality.
+- Metadata standardization, validation, and augmentation are strongly
+  correlated with each other and with most other features, reflecting
+  their foundational role in platform design.
+
+Resource Type Co-occurrence
+----------------------------
+- Datasets co-occurs highly with all other features, as it is present in
+  all 29 platforms (100%).
+- Publications, Samples, Reports/Analyses, Tools, Protocols, and Images
+  tend to co-occur with each other at moderate-to-high rates (45-76%),
+  suggesting platforms that support one research output type tend to
+  support several others.
+- Clinical Trials shows moderate co-occurrence with most features,
+  reflecting its presence in roughly half of platforms.
+
+Niche Features
+--------------
+- Websites, Multimedia, Grants, and Institution/Researcher Profiles show
+  low co-occurrence with most other features (typically <15%), confirming
+  these are specialized capabilities not commonly paired with standard
+  platform features.
+- Grants in particular rarely co-occurs with any other feature, appearing
+  in only 3 platforms and clustering separately from the rest.
