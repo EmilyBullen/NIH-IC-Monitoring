@@ -1,0 +1,32 @@
+Key Findings: Base Schema Usage Across NIH IC Data Ecosystem Platforms
+=======================================================================
+
+General
+-------
+- 29 platforms were analyzed for base schema usage.
+- The majority of platforms (17/29, 59%) use a named, established schema.
+- 8 platforms (28%) rely entirely on a custom schema.
+- 1 platform (SPARC, 3%) uses both a custom and a named schema (OME Metadata Schema).
+- 3 platforms (10%) have an unknown schema (NIDA Data Share, NEI Data Commons, FaceBase).
+
+Named Schema Adoption
+----------------------
+- schema.org and Gen3 data model are the most commonly used named schemas,
+  each adopted by 3 platforms.
+- DCAT and DATMM are each used by 2 platforms.
+- 13 of 17 named schemas appear in only a single platform, reflecting high
+  fragmentation across the NIH IC ecosystem.
+
+Custom Schemas
+--------------
+- 9 platforms use a custom schema (8 custom only, 1 custom + named).
+- Several custom schemas are built on external frameworks:
+  4D Nucleome and MoTrPAC use custom schemas developed by ENCODE DCC;
+  cdRNS uses a custom schema developed by BRICS.
+
+Fragmentation
+-------------
+- 17 distinct named schemas were identified across 18 platforms, indicating
+  limited convergence on shared standards.
+- No single schema dominates the ecosystem; even the most common schemas
+  (schema.org, Gen3 data model) are each used by only 3 platforms (10%).
