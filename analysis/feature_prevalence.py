@@ -75,13 +75,13 @@ group_colors = {
     "Resource Types": "#C44E52",
 }
 
-features = []
-colors = []
-for group, cols in groups.items():
-    for c in cols:
-        features.append(c)
-        colors.append(group_colors[group])
+feature_to_group = {c: g for g, cols in groups.items() for c in cols}
 
+# Sort all features by count descending
+sorted_features = sorted(bool_cols, key=lambda f: counts[f], reverse=True)
+
+features = sorted_features
+colors = [group_colors[feature_to_group[f]] for f in features]
 pcts = [counts[f] / n_platforms * 100 for f in features]
 labels = [short_labels[f] for f in features]
 
@@ -106,15 +106,6 @@ ax.axvline(50, color="gray", linestyle="--", linewidth=0.8, alpha=0.6)
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
-# Group separators
-group_sizes = [len(v) for v in groups.values()]
-boundaries = []
-pos = 0
-for size in group_sizes[:-1]:
-    pos += size
-    boundaries.append(pos - 0.5)
-for b in boundaries:
-    ax.axhline(b, color="lightgray", linewidth=1.2, linestyle="-")
 
 # Legend
 legend_patches = [mpatches.Patch(color=c, label=g) for g, c in group_colors.items()]
