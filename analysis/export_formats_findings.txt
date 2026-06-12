@@ -1,0 +1,40 @@
+Key Findings: Export Format Prevalence Across NIH IC Data Ecosystem Platforms
+=============================================================================
+
+General
+-------
+- 24 of 29 platforms (83%) list at least one export format.
+- 5 platforms have no listed export formats (DataMed COVID-19, DataMed/BioCaddie,
+  NIH Cloud Platform Interoperability Effort, NEI Data Commons, NLM Dataset Catalog).
+- 70 unique export formats were identified across all platforms.
+- 45 formats (64%) appear in only a single platform, reflecting high specialization.
+
+Most Common Formats
+-------------------
+- CSV is the most prevalent format, supported by 17/24 platforms (71%).
+- TSV (11), JSON (10), and TXT (8) round out the top four.
+- These four general-purpose formats together represent broad, tool-agnostic data access.
+
+Genomics/Bioinformatics Formats
+--------------------------------
+- BAM (7), VCF (6), and FASTQ (6) are the most common domain-specific formats,
+  reflecting the prevalence of genomics-focused platforms in the NIH ecosystem.
+- Additional bioinformatics formats with moderate adoption include BED (3),
+  CRAM (3), FASTA (2), GFF3 (2), and BIOM (2).
+
+Statistical/Analysis Formats
+-----------------------------
+- SAS format is supported by 5 platforms, reflecting NIH's clinical and
+  epidemiological research focus.
+- XPT (SAS transport format) appears in 2 platforms.
+- Other statistical formats (SPSS, Stata, R) each appear in only 1 platform.
+
+Document and Archive Formats
+-----------------------------
+- PDF (4), ZIP (4), XLSX (4), HTML (3), and DOC (3) indicate that many platforms
+  also support human-readable and archival outputs alongside machine-readable formats.
+
+Imaging Formats
+---------------
+- TIFF appears in 3 platforms; NIfTI (neuroimaging) in 2; DICOM in 1.
+- Specialized imaging formats (OBJ, PLY, MP4, JPEG) each appear in only 1 platform.
