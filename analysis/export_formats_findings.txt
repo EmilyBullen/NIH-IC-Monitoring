@@ -8,6 +8,8 @@ General
   NIH Cloud Platform Interoperability Effort, NEI Data Commons, NLM Dataset Catalog).
 - 70 unique export formats were identified across all platforms.
 - 45 formats (64%) appear in only a single platform, reflecting high specialization.
+- Genomics formats are well-represented: BAM (7), VCF (6), FASTQ (6), CRAM (3).
+- Statistical formats present but less common: SAS (5), XPT (2).
 
 Most Common Formats
 -------------------
@@ -21,7 +23,6 @@ Genomics/Bioinformatics Formats
   reflecting the prevalence of genomics-focused platforms in the NIH ecosystem.
 - Additional bioinformatics formats with moderate adoption include BED (3),
   CRAM (3), FASTA (2), GFF3 (2), and BIOM (2).
-- Genomics formats are well-represented: BAM (7), VCF (6), FASTQ (6), CRAM (3).
 
 Statistical/Analysis Formats
 -----------------------------
@@ -29,7 +30,6 @@ Statistical/Analysis Formats
   epidemiological research focus.
 - XPT (SAS transport format) appears in 2 platforms.
 - Other statistical formats (SPSS, Stata, R) each appear in only 1 platform.
-- Statistical formats present but less common: SAS (5), XPT (2).
 
 Document and Archive Formats
 -----------------------------
