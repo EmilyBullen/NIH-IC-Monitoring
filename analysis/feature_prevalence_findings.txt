@@ -1,0 +1,37 @@
+Key Findings: Feature Prevalence Across NIH IC Data Ecosystem Platforms
+========================================================================
+
+General
+-------
+- 29 platforms were analyzed across 24 TRUE/FALSE feature categories.
+- Features span four groups: Technical Features, Metadata, Infrastructure,
+  and Resource Types.
+
+Universal and Near-Universal Features
+--------------------------------------
+- Datasets is the only feature supported by all 29 platforms (100%).
+- Metadata standardization is near-universal (28/29, 97%).
+- Search is supported by 27/29 platforms (93%).
+- Metadata validation (24/29, 83%) and augmentation (23/29, 79%) are
+  also broadly adopted.
+- Samples and Publications are each supported by 22/29 platforms (76%).
+
+Moderately Supported Features
+------------------------------
+- Reports/Analyses (21/29, 72%), Tools (19/29, 66%), Protocols (19/29, 66%),
+  Images (19/29, 66%), and API (19/29, 66%) are present in roughly two-thirds
+  of platforms.
+- Clinical Trials is supported by just over half of platforms (15/29, 52%).
+- Workspace, Repositories, and Models are each supported by 13/29 platforms (45%).
+- Software Source Code is present in 12/29 platforms (41%).
+
+Rare Features
+-------------
+- Multimedia and Websites are each supported by only 4/29 platforms (14%).
+- Grants appears in only 3/29 platforms (10%).
+- Institution/Researcher Profiles is supported by only 2/29 platforms (7%).
+
+Absent Features
+---------------
+- Public Uptime Checking, Posters/Conference Contributions, and
+  Books/Collections are absent from all 29 platforms (0%).
