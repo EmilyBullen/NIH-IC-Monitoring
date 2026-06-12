@@ -1,0 +1,37 @@
+Key Findings: Ontology Usage Across NIH IC Data Ecosystem Platforms
+====================================================================
+
+General
+-------
+- 25 of 29 platforms (86%) list at least one ontology.
+- 4 platforms have no listed ontologies (NAHDAP, NICHD DASH, DataMed COVID-19,
+  NEI Data Commons).
+- 70 unique ontologies were identified across all platforms.
+- Platforms use an average of 4.6 ontologies each (range: 1-23).
+- 49 ontologies (70%) appear in only a single platform, reflecting high
+  fragmentation across the NIH IC ecosystem.
+
+Most Common Ontologies
+-----------------------
+- Human Phenotype Ontology (HPO) is the most widely adopted, used by 6 platforms.
+- ChEBI, UBERON, and Gene Ontology (GO) are each used by 5 platforms.
+- MeSH, OBI, Disease Ontology (DO), NCBI Taxonomy, and MONDO Disease Ontology
+  are each used by 4 platforms.
+- NIH Common Data Elements and NIF/NIFSTD are each used by 3 platforms.
+
+Thematic Patterns
+-----------------
+- Phenotype and disease ontologies are well-represented: HPO (6), MONDO (4),
+  Disease Ontology (4), SNOMED-CT (2).
+- Anatomy ontologies are moderately adopted: UBERON (5), FMA (2).
+- Chemistry and molecular biology ontologies appear across multiple platforms:
+  ChEBI (5), Gene Ontology (5), NCBI Taxonomy (4), PubChem (2), UniProt (2).
+- Clinical and terminology standards are less common: LOINC (2), OMOP (2),
+  SNOMED-CT (2).
+
+Fragmentation
+-------------
+- No single ontology is adopted by more than 21% of platforms (HPO: 6/29).
+- The high number of platform-specific ontologies (49 appearing in only 1
+  platform) suggests limited convergence on shared controlled vocabularies
+  across the NIH IC ecosystem.
