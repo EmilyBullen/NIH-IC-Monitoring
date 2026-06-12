@@ -95,6 +95,8 @@ filtered = [(ont, cnt) for ont, cnt in counts.most_common() if cnt >= 2]
 labels = [f[0] for f in filtered]
 values = [f[1] for f in filtered]
 
+n_single = sum(1 for c in counts.values() if c == 1)
+
 fig, ax = plt.subplots(figsize=(10, 6))
 y = np.arange(len(labels))
 bars = ax.barh(y, values, color="#4C72B0", edgecolor="white", linewidth=0.5)
@@ -110,19 +112,20 @@ ax.set_xlabel("Number of platforms", fontsize=11)
 ax.set_title(
     f"Ontology Prevalence Across NIH IC Data Ecosystem Platforms\n"
     f"(n={n_platforms} platforms; ontologies present in ≥2 platforms shown)",
-    fontsize=12, fontweight="bold", pad=12
+    fontsize=12, fontweight="bold", pad=28
+)
+ax.annotate(
+    f"Note: {len(none_platforms)} platforms have no listed ontologies. "
+    f"{n_single} additional ontologies appear in only 1 platform.",
+    xy=(0.5, 1.0), xycoords="axes fraction",
+    ha="center", va="bottom", fontsize=8, color="gray"
 )
 ax.set_xlim(0, max(values) + 1.5)
 ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
-n_shown = len(labels)
 n_single = sum(1 for c in counts.values() if c == 1)
-ax.text(0, len(labels) + 0.3,
-        f"Note: {len(none_platforms)} platforms have no listed ontologies. "
-        f"{n_single} additional ontologies appear in only 1 platform.",
-        fontsize=8, color="gray")
 
 plt.tight_layout()
 plt.savefig("analysis/ontologies.png", dpi=300, bbox_inches="tight")
