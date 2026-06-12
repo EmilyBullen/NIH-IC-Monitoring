@@ -54,6 +54,7 @@ ax.set_title(
     fontsize=12, fontweight="bold", pad=12
 )
 ax.set_xlim(0, max(values) + 2)
+ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
